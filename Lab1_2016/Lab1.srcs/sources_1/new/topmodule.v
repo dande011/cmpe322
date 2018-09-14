@@ -54,11 +54,6 @@ module topmodule(
     begin
         if(reset==1)
             refresh_counter <= 0;
-<<<<<<< HEAD
-            output_value <= 10;
-        end
-=======
->>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
         else
             refresh_counter <= refresh_counter + 1;
     end

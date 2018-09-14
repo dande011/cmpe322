@@ -1,13 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-<<<<<<< HEAD
-| Date         : Fri Sep 14 11:23:11 2018
-| Host         : sn237s01 running 64-bit major release  (build 9200)
-=======
-| Date         : Fri Sep 14 11:35:15 2018
+| Date         : Fri Sep 14 11:55:49 2018
 | Host         : sn237s02 running 64-bit major release  (build 9200)
->>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file topmodule_timing_summary_routed.rpt -rpx topmodule_timing_summary_routed.rpx
 | Design       : topmodule
 | Device       : 7a35t-cpg236
