@@ -3,10 +3,17 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Fri Sep 14 11:40:55 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="4b80b11290b74b6aba3c05f29be6c466" type="ProjectID"/>
 <property name="ProjectIteration" value="119" type="ProjectIteration"/>
+=======
+<application name="pa" timeStamp="Fri Sep 14 11:33:48 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="4b80b11290b74b6aba3c05f29be6c466" type="ProjectID"/>
+<property name="ProjectIteration" value="127" type="ProjectIteration"/>
+>>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -33,18 +40,26 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="104" type="JavaHandler"/>
 <property name="OpenProject" value="3" type="JavaHandler"/>
+<<<<<<< HEAD
 <property name="OpenRecentTarget" value="10" type="JavaHandler"/>
+=======
+<property name="OpenRecentTarget" value="12" type="JavaHandler"/>
+>>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
 <property name="ProgramCfgMem" value="2" type="JavaHandler"/>
 <property name="ProgramDevice" value="87" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
 <property name="RefreshServer" value="1" type="JavaHandler"/>
 <property name="RefreshTarget" value="1" type="JavaHandler"/>
+<<<<<<< HEAD
 <property name="RunBitgen" value="119" type="JavaHandler"/>
+=======
+<property name="RunBitgen" value="127" type="JavaHandler"/>
+>>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
 <property name="RunImplementation" value="2" type="JavaHandler"/>
 <property name="RunSynthesis" value="32" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="7" type="JavaHandler"/>
 <property name="SaveProjectAs" value="2" type="JavaHandler"/>
-<property name="ShowView" value="33" type="JavaHandler"/>
+<property name="ShowView" value="40" type="JavaHandler"/>
 <property name="SimulationClose" value="2" type="JavaHandler"/>
 <property name="SimulationRun" value="3" type="JavaHandler"/>
 <property name="UnselectAllCmdHandler" value="2" type="JavaHandler"/>
@@ -54,6 +69,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformSaveConfiguration" value="1" type="JavaHandler"/>
 <property name="ui.views.c.h.f" value="1" type="JavaHandler"/>
 </item>
+<<<<<<< HEAD
 <item name="Gui Resources Info">
 <property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
 <property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
@@ -66,6 +82,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="2" type="TclMode"/>
 </item>
+=======
+>>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
 </section>
 </application>
 </document>

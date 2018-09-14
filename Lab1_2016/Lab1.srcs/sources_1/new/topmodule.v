@@ -44,45 +44,54 @@ module topmodule(
     reg [19:0] pressedU = 0;
     reg [19:0] pressed1 = 0;
     
+//    always @(posedge sw[14])
+//    begin
+//        output_value = 10;
+//    end
+    
     // Iterate refresh_counter
     always @(posedge CLK100MHZ or posedge reset)
     begin
-        if(reset==1)begin
+        if(reset==1)
             refresh_counter <= 0;
+<<<<<<< HEAD
             output_value <= 10;
         end
+=======
+>>>>>>> c8a40518f83592f2753b53e198108ec63dac7002
         else
             refresh_counter <= refresh_counter + 1;
     end
     assign activating_counter = refresh_counter[19:18];
     
-    //btnU
-    always @(posedge CLK100MHZ)
+    //btnU&sw1
+    always @(posedge CLK100MHZ or posedge reset)
     begin
-    //check for button up
-        if(btnU == 1 && pressedU==0)begin
-            output_value <= output_value + 1;
-            if(output_value>9999)
-                output_value <= 0;
-            pressedU = refresh_counter;
+        if(reset==1)
+            output_value <= 10;
+        else begin
+            //check for button up
+            if(btnU == 1 && pressedU==0)begin
+                output_value <= output_value + 1;
+                if(output_value>9999)
+                    output_value <= 0;
+                pressedU = refresh_counter;
+            end
+    //        else if(btnU == 0 && (refresh_counter-pressedU >= 5000))
+            else if(btnU == 0)
+                pressedU = 0;
+                
+            //check for sw[1]
+            if(sw[0] == 1 && pressed1==0)begin
+                if(output_value!=0)
+                    output_value <= output_value - 1;
+                pressed1 = refresh_counter;
+            end
+            else if (sw[0] == 0 && (refresh_counter - pressed1 >= 50000))
+                pressed1 = 0;
         end
-//        else if(btnU == 0 && (refresh_counter-pressedU >= 5000))
-        else if(btnU == 0)
-            pressedU = 0;
-    end // btnU
-    
-    //sw1
-    always @(posedge CLK100MHZ)
-    begin
-        //check for sw[1]
-        if(sw[0] == 1 && pressed1==0)begin
-            if(output_value!=0)
-                output_value <= output_value - 1;
-            pressed1 = refresh_counter;
-        end
-        else if (sw[0] == 0 && (refresh_counter - pressed1 >= 50000))
-            pressed1 = 0;
-    end //sw1
+    end // btnU&sw1
+
 
     always @(*)
     begin
