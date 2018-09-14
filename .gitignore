@@ -2,7 +2,6 @@
 *.bit
 *.wdf
 *.wpc
-*.xml
 *.rst
 *.js
 *.log
