@@ -49,7 +49,7 @@ module topmodule(
     begin
         if(reset==1)begin
             refresh_counter <= 0;
-            output_value <= 0;
+            output_value <= 10;
         end
         else
             refresh_counter <= refresh_counter + 1;
