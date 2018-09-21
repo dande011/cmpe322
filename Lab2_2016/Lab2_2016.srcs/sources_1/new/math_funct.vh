@@ -9,12 +9,13 @@ function [16:0] math_funct(
     input [16:0] current_val,
     input [16:0] new_val
     );
-    case(function_number)
-        2'b00: math_funct = current_val + new_val;
-        2'b01: math_funct = current_val - new_val;
-        2'b10: math_funct = current_val & new_val;
-        2'b11: math_funct = current_val ^ new_val;
-    endcase   
+    math_funct = current_val + new_val;
+//    case(function_number)
+//        2'b00: math_funct = current_val + new_val;
+//        2'b01: math_funct = current_val - new_val;
+//        2'b10: math_funct = current_val & new_val;
+//        2'b11: math_funct = current_val ^ new_val;
+//    endcase   
 endfunction //math_funct
 
 

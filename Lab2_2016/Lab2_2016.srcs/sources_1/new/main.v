@@ -22,7 +22,7 @@
 
 module main(
     output reg [6:0] seg,
-    output dp,
+//    output dp,
     output reg [3:0] an,
     input btnU,
     input btnD,
@@ -35,19 +35,16 @@ module main(
     `include "hexToSeg_funct.vh"
     `include "math_funct.vh"
     
-    
-    reg [1:0] test = 0;
-    
-    
+    reg reset = 0;
     reg [16:0] output_value = 0;
-    wire [16:0] input_value = 0;
+    reg [16:0] input_value = 0;
     reg [19:0] refresh_counter = 0;
     wire [1:0] activating_counter;
                    //  count   0  ->  1  ->  2  ->  3
                    // annode LED1   LED2   LED3   LED4
     //Array of 5 buttons
     // U D L R C
-    wire btn [4:0] = {btnU, btnD, btnL, btnR, btnC};
+    wire btn [4:0] = {btnC, btnR, btnL, btnD, btnU};
     //Array of 5 pressed variables
     reg [19:0] pressed [4:0];
     
@@ -57,19 +54,26 @@ module main(
     //refresh_counter
     always @(posedge CLK100MHZ)
     begin
-        if(btn[4] == 1 && pressed[4] == 0)begin
+        if(!btn[4] && !pressed[4])begin
             refresh_counter <= 0;
             pressed[4] <= refresh_counter;
+            reset <= 1;
         end
-        else if(btn[4] == 0 && (refresh_counter - pressed[4] >= DEBOUNCE))
+        else if(btn[4] && (refresh_counter - pressed[4] >= DEBOUNCE))begin
             pressed[4] <= 0;
-        else
-            refresh_counter <= refresh_counter + 1;
+        end
+        refresh_counter <= refresh_counter + 1;
     end //refresh_counter
     assign activating_counter = refresh_counter[19:18];
     
     
+    reg [3:0] counter = 0;
     //Set new value from switches
+    always @(posedge CLK100MHZ)
+    begin
+        for(counter = 0; counter <= 4'b111; counter = counter + 1)
+            input_value[counter] = sw[counter];
+    end //Set from switches
 //    generate
 //    genvar counter;
 //        for(counter = 0; counter <= 4'b1111; counter = counter + 1) begin : counter_outer
@@ -77,22 +81,37 @@ module main(
 //        end
 //    endgenerate
     
-    
+    reg [1:0] i;
     //Check Buttons
-    generate
-        genvar i;
-        for(i = 0; i <= 3; i = i + 1) begin : btn_outer
-            always @(posedge CLK100MHZ) begin
-            if(btn[i] == 1 && pressed[i] == 0)
-                pressed[i] <= refresh_counter;
-            else if(btn[i] == 0 && (refresh_counter - pressed[i] >= DEBOUNCE))
+    always @(posedge CLK100MHZ)
+    begin
+        for(i=0; i < 2'b11; i = i + 1)
+        begin
+            if(reset)
+                output_value <= 0;
+            if(btn[i] && !pressed[i])
                 begin
-                    pressed[i] <= 0;
-                    output_value <= math_funct(i,output_value,sw);
+                    pressed[i] <= refresh_counter;
+                    output_value <= math_funct(i,output_value,input_value);
                 end
-            end
-        end //btn_outer
-    endgenerate //Check Buttons
+            else if(!btn[i] && (refresh_counter - pressed[i] >= DEBOUNCE))
+                pressed[i] <= 0;
+        end
+    end //check buttons
+//    generate
+//        genvar i;
+//        for(i = 0; i <= 3; i = i + 1) begin : btn_outer
+//            always @(posedge CLK100MHZ) begin
+//            if(btn[i] == 1 && pressed[i] == 0)
+//                pressed[i] <= refresh_counter;
+//            else if(btn[i] == 0 && (refresh_counter - pressed[i] >= DEBOUNCE))
+//                begin
+//                    pressed[i] <= 0;
+//                    output_value <= math_funct(i,output_value,sw);
+//                end
+//            end
+//        end //btn_outer
+//    endgenerate //Check Buttons
     
     
     //Display current values to output
