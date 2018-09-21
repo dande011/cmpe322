@@ -36,12 +36,16 @@ module main(
     `include "math_funct.vh"
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
     reg [1:0] test = 0;
     
     
 >>>>>>> parent of b5b4bc7... Heading to meeting
+=======
+    reg reset = 0;
+>>>>>>> parent of f9219ee... Vivado forgot there was a top module
     reg [16:0] output_value = 0;
     wire [16:0] input_value = 0;
     reg [19:0] refresh_counter = 0;
@@ -49,13 +53,19 @@ module main(
                    //  count   0  ->  1  ->  2  ->  3
                    // annode LED1   LED2   LED3   LED4
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     //Array of 5 buttons
     // U D L R C
     wire btn [4:0] = {btnU, btnD, btnL, btnR, btnC};
 >>>>>>> parent of b5b4bc7... Heading to meeting
     //Array of 5 pressed variables
+=======
+    //Array of 5 buttons
+>>>>>>> parent of f9219ee... Vivado forgot there was a top module
     // U D L R C
+    wire btn [4:0] = {btnC, btnR, btnL, btnD, btnU};
+    //Array of 5 pressed variables
     reg [19:0] pressed [4:0];
     
     //debounce 5000 cycles => 1/20000 second
@@ -65,15 +75,25 @@ module main(
     always @(posedge CLK100MHZ)
     begin
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(btnC && !pressed[4])begin
+=======
+        if(!btn[4] && !pressed[4])begin
+>>>>>>> parent of f9219ee... Vivado forgot there was a top module
             refresh_counter <= 0;
             pressed[4] <= refresh_counter;
+            reset <= 1;
         end
+<<<<<<< HEAD
         else if(btnC && (refresh_counter - pressed[4] >= DEBOUNCE))begin
 =======
         if(btn[4] == 1 && pressed[4] == 0)begin
             refresh_counter <= 0;
             pressed[4] <= refresh_counter;
+=======
+        else if(btn[4] && (refresh_counter - pressed[4] >= DEBOUNCE))begin
+            pressed[4] <= 0;
+>>>>>>> parent of f9219ee... Vivado forgot there was a top module
         end
         else if(btn[4] == 0 && (refresh_counter - pressed[4] >= DEBOUNCE))
 >>>>>>> parent of b5b4bc7... Heading to meeting
@@ -99,8 +119,9 @@ module main(
     begin
         for(i=0; i < 2'b11; i = i + 1)
         begin
-            if(btnC)
+            if(reset)
                 output_value <= 0;
+<<<<<<< HEAD
             if(btnU && !pressed[i])
 =======
     generate
@@ -111,12 +132,19 @@ module main(
                 pressed[i] <= refresh_counter;
             else if(btn[i] == 0 && (refresh_counter - pressed[i] >= DEBOUNCE))
 >>>>>>> parent of b5b4bc7... Heading to meeting
+=======
+            if(btn[i] && !pressed[i])
+>>>>>>> parent of f9219ee... Vivado forgot there was a top module
                 begin
                     pressed[i] <= 0;
                     output_value <= math_funct(i,output_value,sw);
                 end
 <<<<<<< HEAD
+<<<<<<< HEAD
             else if(!btnU && (refresh_counter - pressed[i] >= DEBOUNCE))
+=======
+            else if(!btn[i] && (refresh_counter - pressed[i] >= DEBOUNCE))
+>>>>>>> parent of f9219ee... Vivado forgot there was a top module
                 pressed[i] <= 0;
         end
     end //check buttons
