@@ -35,17 +35,14 @@ module main(
     `include "hexToSeg_funct.vh"
     `include "math_funct.vh"
     
-    reg reset = 0;
     reg [16:0] output_value = 0;
     reg [16:0] input_value = 0;
     reg [19:0] refresh_counter = 0;
     wire [1:0] activating_counter;
                    //  count   0  ->  1  ->  2  ->  3
                    // annode LED1   LED2   LED3   LED4
-    //Array of 5 buttons
-    // U D L R C
-    wire btn [4:0] = {btnC, btnR, btnL, btnD, btnU};
     //Array of 5 pressed variables
+    // U D L R C
     reg [19:0] pressed [4:0];
     
     //debounce 5000 cycles => 1/20000 second
@@ -54,12 +51,11 @@ module main(
     //refresh_counter
     always @(posedge CLK100MHZ)
     begin
-        if(!btn[4] && !pressed[4])begin
+        if(btnC && !pressed[4])begin
             refresh_counter <= 0;
             pressed[4] <= refresh_counter;
-            reset <= 1;
         end
-        else if(btn[4] && (refresh_counter - pressed[4] >= DEBOUNCE))begin
+        else if(btnC && (refresh_counter - pressed[4] >= DEBOUNCE))begin
             pressed[4] <= 0;
         end
         refresh_counter <= refresh_counter + 1;
@@ -87,14 +83,14 @@ module main(
     begin
         for(i=0; i < 2'b11; i = i + 1)
         begin
-            if(reset)
+            if(btnC)
                 output_value <= 0;
-            if(btn[i] && !pressed[i])
+            if(btnU && !pressed[i])
                 begin
                     pressed[i] <= refresh_counter;
                     output_value <= math_funct(i,output_value,input_value);
                 end
-            else if(!btn[i] && (refresh_counter - pressed[i] >= DEBOUNCE))
+            else if(!btnU && (refresh_counter - pressed[i] >= DEBOUNCE))
                 pressed[i] <= 0;
         end
     end //check buttons
