@@ -1,2 +1,0 @@
-srcs\sources\new\*.vh
-srcs\sources\new\*.v
