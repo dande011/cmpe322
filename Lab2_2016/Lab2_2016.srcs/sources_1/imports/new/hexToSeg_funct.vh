@@ -78,7 +78,7 @@ function [7:0] segSplitHex(
 endfunction //segSplitHex
 
 function [7:0] segSplitDec(
-    input [13:0] outputValue,
+    input [16:0] outputValue,
     input [1:0] activating_counter
     );
     begin
