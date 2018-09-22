@@ -2,12 +2,12 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Sep 21 11:55:11 2018
-# Process ID: 10056
-# Current directory: C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1
+# Start of session at: Fri Sep 21 14:55:23 2018
+# Process ID: 20136
+# Current directory: D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1
 # Command line: vivado.exe -log main.vds -mode batch -messageDb vivado.pb -notrace -source main.tcl
-# Log file: C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1/main.vds
-# Journal file: C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1\vivado.jou
+# Log file: D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1/main.vds
+# Journal file: D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source main.tcl -notrace
 Command: synth_design -top main -part xc7a35tcpg236-1
@@ -15,24 +15,31 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 540 
-WARNING: [Synth 8-1843] compiler directive `timescale is not allowed here [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:4]
+INFO: Helper process launched with PID 5820 
+WARNING: [Synth 8-1843] compiler directive `timescale is not allowed here [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:4]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 285.254 ; gain = 78.598
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 287.059 ; gain = 80.199
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-638] synthesizing module 'main' [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:23]
 	Parameter DEBOUNCE bound to: 5000 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:55]
-INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:87]
-INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
-INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
-INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
-INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
-WARNING: [Synth 8-3848] Net dp in module/entity main does not have driver. [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:25]
-INFO: [Synth 8-256] done synthesizing module 'main' (1#1) [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:23]
-WARNING: [Synth 8-3331] design main has unconnected port dp
+INFO: [Synth 8-226] default block is never used [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:55]
+INFO: [Synth 8-226] default block is never used [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:87]
+INFO: [Synth 8-226] default block is never used [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
+INFO: [Synth 8-226] default block is never used [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
+INFO: [Synth 8-226] default block is never used [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
+INFO: [Synth 8-226] default block is never used [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
+INFO: [Synth 8-256] done synthesizing module 'main' (1#1) [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:23]
+WARNING: [Synth 8-3331] design main has unconnected port btnR
+WARNING: [Synth 8-3331] design main has unconnected port sw[15]
+WARNING: [Synth 8-3331] design main has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main has unconnected port sw[10]
+WARNING: [Synth 8-3331] design main has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main has unconnected port sw[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 303.191 ; gain = 96.535
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 304.898 ; gain = 98.039
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -42,41 +49,47 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 303.191 ; gain = 96.535
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 304.898 ; gain = 98.039
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Parsing XDC File [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/david/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/constrs_1/imports/Getting Started/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 599.922 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 600.570 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -89,17 +102,16 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     21 Bit       Adders := 5     
-	   3 Input     17 Bit       Adders := 1     
-	   2 Input     17 Bit       Adders := 1     
-+---XORs : 
-	   2 Input     17 Bit         XORs := 1     
+	   3 Input     21 Bit       Adders := 4     
 +---Registers : 
-	               20 Bit    Registers := 5     
+	               20 Bit    Registers := 4     
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	  16 Input      7 Bit        Muxes := 3     
 	  19 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -110,17 +122,16 @@ Hierarchical RTL Component report
 Module main 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     21 Bit       Adders := 5     
-	   3 Input     17 Bit       Adders := 1     
-	   2 Input     17 Bit       Adders := 1     
-+---XORs : 
-	   2 Input     17 Bit         XORs := 1     
+	   3 Input     21 Bit       Adders := 4     
 +---Registers : 
-	               20 Bit    Registers := 5     
+	               20 Bit    Registers := 4     
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	  16 Input      7 Bit        Muxes := 3     
 	  19 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -133,15 +144,23 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.922 ; gain = 393.266
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3331] design main has unconnected port dp
+WARNING: [Synth 8-3331] design main has unconnected port btnR
+WARNING: [Synth 8-3331] design main has unconnected port sw[15]
+WARNING: [Synth 8-3331] design main has unconnected port sw[14]
+WARNING: [Synth 8-3331] design main has unconnected port sw[13]
+WARNING: [Synth 8-3331] design main has unconnected port sw[12]
+WARNING: [Synth 8-3331] design main has unconnected port sw[11]
+WARNING: [Synth 8-3331] design main has unconnected port sw[10]
+WARNING: [Synth 8-3331] design main has unconnected port sw[9]
+WARNING: [Synth 8-3331] design main has unconnected port sw[8]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 600.570 ; gain = 393.711
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -152,9 +171,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 600.570 ; gain = 393.711
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -168,10 +187,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 599.922 ; gain = 393.266
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 600.570 ; gain = 393.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 617.445 ; gain = 410.789
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 604.039 ; gain = 397.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -183,16 +202,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -209,88 +228,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[16] with 1st driver pin 'btn_outer[3].output_value_reg[16]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[16] with 2nd driver pin 'btn_outer[2].output_value_reg[16]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[16] with 3rd driver pin 'btn_outer[1].output_value_reg[16]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[16] with 4th driver pin 'btn_outer[0].output_value_reg[16]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[15] with 1st driver pin 'btn_outer[3].output_value_reg[15]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[15] with 2nd driver pin 'btn_outer[2].output_value_reg[15]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[15] with 3rd driver pin 'btn_outer[1].output_value_reg[15]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[15] with 4th driver pin 'btn_outer[0].output_value_reg[15]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[14] with 1st driver pin 'btn_outer[3].output_value_reg[14]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[14] with 2nd driver pin 'btn_outer[2].output_value_reg[14]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[14] with 3rd driver pin 'btn_outer[1].output_value_reg[14]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[14] with 4th driver pin 'btn_outer[0].output_value_reg[14]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[13] with 1st driver pin 'btn_outer[3].output_value_reg[13]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[13] with 2nd driver pin 'btn_outer[2].output_value_reg[13]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[13] with 3rd driver pin 'btn_outer[1].output_value_reg[13]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[13] with 4th driver pin 'btn_outer[0].output_value_reg[13]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[12] with 1st driver pin 'btn_outer[3].output_value_reg[12]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[12] with 2nd driver pin 'btn_outer[2].output_value_reg[12]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[12] with 3rd driver pin 'btn_outer[1].output_value_reg[12]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[12] with 4th driver pin 'btn_outer[0].output_value_reg[12]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[11] with 1st driver pin 'btn_outer[3].output_value_reg[11]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[11] with 2nd driver pin 'btn_outer[2].output_value_reg[11]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[11] with 3rd driver pin 'btn_outer[1].output_value_reg[11]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[11] with 4th driver pin 'btn_outer[0].output_value_reg[11]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[10] with 1st driver pin 'btn_outer[3].output_value_reg[10]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[10] with 2nd driver pin 'btn_outer[2].output_value_reg[10]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[10] with 3rd driver pin 'btn_outer[1].output_value_reg[10]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[10] with 4th driver pin 'btn_outer[0].output_value_reg[10]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[9] with 1st driver pin 'btn_outer[3].output_value_reg[9]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[9] with 2nd driver pin 'btn_outer[2].output_value_reg[9]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[9] with 3rd driver pin 'btn_outer[1].output_value_reg[9]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[9] with 4th driver pin 'btn_outer[0].output_value_reg[9]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[8] with 1st driver pin 'btn_outer[3].output_value_reg[8]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[8] with 2nd driver pin 'btn_outer[2].output_value_reg[8]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[8] with 3rd driver pin 'btn_outer[1].output_value_reg[8]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[8] with 4th driver pin 'btn_outer[0].output_value_reg[8]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[7] with 1st driver pin 'btn_outer[3].output_value_reg[7]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[7] with 2nd driver pin 'btn_outer[2].output_value_reg[7]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[7] with 3rd driver pin 'btn_outer[1].output_value_reg[7]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[7] with 4th driver pin 'btn_outer[0].output_value_reg[7]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[6] with 1st driver pin 'btn_outer[3].output_value_reg[6]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[6] with 2nd driver pin 'btn_outer[2].output_value_reg[6]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[6] with 3rd driver pin 'btn_outer[1].output_value_reg[6]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[6] with 4th driver pin 'btn_outer[0].output_value_reg[6]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[5] with 1st driver pin 'btn_outer[3].output_value_reg[5]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[5] with 2nd driver pin 'btn_outer[2].output_value_reg[5]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[5] with 3rd driver pin 'btn_outer[1].output_value_reg[5]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[5] with 4th driver pin 'btn_outer[0].output_value_reg[5]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[4] with 1st driver pin 'btn_outer[3].output_value_reg[4]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[4] with 2nd driver pin 'btn_outer[2].output_value_reg[4]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[4] with 3rd driver pin 'btn_outer[1].output_value_reg[4]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[4] with 4th driver pin 'btn_outer[0].output_value_reg[4]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[3] with 1st driver pin 'btn_outer[3].output_value_reg[3]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[3] with 2nd driver pin 'btn_outer[2].output_value_reg[3]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[3] with 3rd driver pin 'btn_outer[1].output_value_reg[3]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[3] with 4th driver pin 'btn_outer[0].output_value_reg[3]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[2] with 1st driver pin 'btn_outer[3].output_value_reg[2]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[2] with 2nd driver pin 'btn_outer[2].output_value_reg[2]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[2] with 3rd driver pin 'btn_outer[1].output_value_reg[2]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[2] with 4th driver pin 'btn_outer[0].output_value_reg[2]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[1] with 1st driver pin 'btn_outer[3].output_value_reg[1]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[1] with 2nd driver pin 'btn_outer[2].output_value_reg[1]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[1] with 3rd driver pin 'btn_outer[1].output_value_reg[1]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[1] with 4th driver pin 'btn_outer[0].output_value_reg[1]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[0] with 1st driver pin 'btn_outer[3].output_value_reg[0]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[0] with 2nd driver pin 'btn_outer[2].output_value_reg[0]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[0] with 3rd driver pin 'btn_outer[1].output_value_reg[0]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net output_value[0] with 4th driver pin 'btn_outer[0].output_value_reg[0]/Q' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:91]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       17|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -302,25 +253,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -337,33 +288,32 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    85|
-|3     |LUT1   |    39|
-|4     |LUT2   |   242|
-|5     |LUT3   |    48|
-|6     |LUT4   |    89|
-|7     |LUT5   |    39|
-|8     |LUT6   |    66|
-|9     |FDRE   |   188|
-|10    |IBUF   |    22|
+|2     |CARRY4 |    74|
+|3     |LUT1   |    45|
+|4     |LUT2   |   167|
+|5     |LUT3   |    45|
+|6     |LUT4   |    88|
+|7     |LUT5   |    34|
+|8     |LUT6   |    70|
+|9     |FDRE   |   126|
+|10    |IBUF   |    13|
 |11    |OBUF   |    11|
-|12    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   831|
+|1     |top      |       |   674|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 68 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 617.852 ; gain = 114.465
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 617.852 ; gain = 411.195
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 612.098 ; gain = 109.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 612.098 ; gain = 405.238
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -371,8 +321,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 4 Warnings, 68 Critical Warnings and 0 Errors encountered.
+20 Infos, 21 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 617.852 ; gain = 411.195
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 617.852 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 21 11:55:43 2018...
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 612.098 ; gain = 405.238
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 612.098 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 21 14:55:52 2018...
