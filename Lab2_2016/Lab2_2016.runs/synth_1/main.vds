@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Sep 28 09:29:09 2018
-# Process ID: 11648
+# Start of session at: Fri Sep 28 10:42:29 2018
+# Process ID: 8248
 # Current directory: C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1
 # Command line: vivado.exe -log main.vds -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.runs/synth_1/main.vds
@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13500 
+INFO: Helper process launched with PID 4916 
 WARNING: [Synth 8-1843] compiler directive `timescale is not allowed here [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:4]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 284.645 ; gain = 77.504
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 285.262 ; gain = 78.027
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:23]
 	Parameter DEBOUNCE bound to: 5000 - type: integer 
@@ -28,34 +28,11 @@ INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/Gi
 INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
 INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
 INFO: [Synth 8-226] default block is never used [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/imports/new/hexToSeg_funct.vh:29]
-WARNING: [Synth 8-3848] Net pressed[0] in module/entity main does not have driver. [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:54]
-WARNING: [Synth 8-3848] Net pressed[1] in module/entity main does not have driver. [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:54]
-WARNING: [Synth 8-3848] Net pressed[2] in module/entity main does not have driver. [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:54]
 WARNING: [Synth 8-3848] Net dp in module/entity main does not have driver. [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:25]
 INFO: [Synth 8-256] done synthesizing module 'main' (1#1) [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:23]
 WARNING: [Synth 8-3331] design main has unconnected port dp
-WARNING: [Synth 8-3331] design main has unconnected port btnD
-WARNING: [Synth 8-3331] design main has unconnected port btnL
-WARNING: [Synth 8-3331] design main has unconnected port btnR
-WARNING: [Synth 8-3331] design main has unconnected port btnC
-WARNING: [Synth 8-3331] design main has unconnected port sw[15]
-WARNING: [Synth 8-3331] design main has unconnected port sw[14]
-WARNING: [Synth 8-3331] design main has unconnected port sw[13]
-WARNING: [Synth 8-3331] design main has unconnected port sw[12]
-WARNING: [Synth 8-3331] design main has unconnected port sw[11]
-WARNING: [Synth 8-3331] design main has unconnected port sw[10]
-WARNING: [Synth 8-3331] design main has unconnected port sw[9]
-WARNING: [Synth 8-3331] design main has unconnected port sw[8]
-WARNING: [Synth 8-3331] design main has unconnected port sw[7]
-WARNING: [Synth 8-3331] design main has unconnected port sw[6]
-WARNING: [Synth 8-3331] design main has unconnected port sw[5]
-WARNING: [Synth 8-3331] design main has unconnected port sw[4]
-WARNING: [Synth 8-3331] design main has unconnected port sw[3]
-WARNING: [Synth 8-3331] design main has unconnected port sw[2]
-WARNING: [Synth 8-3331] design main has unconnected port sw[1]
-WARNING: [Synth 8-3331] design main has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 302.438 ; gain = 95.297
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 303.211 ; gain = 95.977
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -65,7 +42,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 302.438 ; gain = 95.297
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 303.211 ; gain = 95.977
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -81,25 +58,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 600.047 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 600.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/CMPE 2010/Documents/GitHub/cmpe322/Lab2_2016/Lab2_2016.srcs/sources_1/new/main.v:103]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -112,16 +90,21 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     21 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 5     
+	   3 Input     17 Bit       Adders := 1     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
 +---Registers : 
-	               20 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
+	               20 Bit    Registers := 5     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
 	  16 Input      7 Bit        Muxes := 3     
 	  19 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -132,16 +115,21 @@ Hierarchical RTL Component report
 Module main 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     21 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 5     
+	   3 Input     17 Bit       Adders := 1     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
 +---Registers : 
-	               20 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
+	               20 Bit    Registers := 5     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
 	  16 Input      7 Bit        Muxes := 3     
 	  19 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -154,35 +142,15 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design main has unconnected port dp
-WARNING: [Synth 8-3331] design main has unconnected port btnD
-WARNING: [Synth 8-3331] design main has unconnected port btnL
-WARNING: [Synth 8-3331] design main has unconnected port btnR
-WARNING: [Synth 8-3331] design main has unconnected port btnC
-WARNING: [Synth 8-3331] design main has unconnected port sw[15]
-WARNING: [Synth 8-3331] design main has unconnected port sw[14]
-WARNING: [Synth 8-3331] design main has unconnected port sw[13]
-WARNING: [Synth 8-3331] design main has unconnected port sw[12]
-WARNING: [Synth 8-3331] design main has unconnected port sw[11]
-WARNING: [Synth 8-3331] design main has unconnected port sw[10]
-WARNING: [Synth 8-3331] design main has unconnected port sw[9]
-WARNING: [Synth 8-3331] design main has unconnected port sw[8]
-WARNING: [Synth 8-3331] design main has unconnected port sw[7]
-WARNING: [Synth 8-3331] design main has unconnected port sw[6]
-WARNING: [Synth 8-3331] design main has unconnected port sw[5]
-WARNING: [Synth 8-3331] design main has unconnected port sw[4]
-WARNING: [Synth 8-3331] design main has unconnected port sw[3]
-WARNING: [Synth 8-3331] design main has unconnected port sw[2]
-WARNING: [Synth 8-3331] design main has unconnected port sw[1]
-WARNING: [Synth 8-3331] design main has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 600.949 ; gain = 393.715
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -192,85 +160,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][19]' (FDRE) to 'pressed_reg[4][18]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][18]' (FDRE) to 'pressed_reg[4][17]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][17]' (FDRE) to 'pressed_reg[4][16]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][15]' (FDRE) to 'pressed_reg[4][16]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][16]' (FDRE) to 'pressed_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][10]' (FDRE) to 'pressed_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][11]' (FDRE) to 'pressed_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][12]' (FDRE) to 'pressed_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][13]' (FDRE) to 'pressed_reg[4][14]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][14]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][3]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][4]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][2]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][0]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][1]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][8]' (FDRE) to 'pressed_reg[4][9]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][9]' (FDRE) to 'pressed_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][7]' (FDRE) to 'pressed_reg[4][6]'
-INFO: [Synth 8-3886] merging instance 'pressed_reg[4][5]' (FDRE) to 'pressed_reg[4][6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pressed_reg[4][6] )
-INFO: [Synth 8-3886] merging instance 'output_value_reg[0]' (FDRE) to 'output_value_reg[1]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[1]' (FDRE) to 'output_value_reg[2]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[2]' (FDRE) to 'output_value_reg[3]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[3]' (FDRE) to 'output_value_reg[4]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[4]' (FDRE) to 'output_value_reg[5]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[5]' (FDRE) to 'output_value_reg[6]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[6]' (FDRE) to 'output_value_reg[7]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[7]' (FDRE) to 'output_value_reg[8]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[13]' (FDRE) to 'output_value_reg[8]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[8]' (FDRE) to 'output_value_reg[9]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[14]' (FDRE) to 'output_value_reg[9]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[9]' (FDRE) to 'output_value_reg[10]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[15]' (FDRE) to 'output_value_reg[10]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[10]' (FDRE) to 'output_value_reg[11]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[16]' (FDRE) to 'output_value_reg[11]'
-INFO: [Synth 8-3886] merging instance 'output_value_reg[11]' (FDRE) to 'output_value_reg[12]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_value_reg[12] )
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][19]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][18]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][17]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][16]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][15]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][14]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][13]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][11]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][10]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][9]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][7]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (pressed_reg[4][0]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (reset_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[16]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[15]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[14]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[13]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[11]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[10]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[9]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[7]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (output_value_reg[0]) is unused and will be removed from module main.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 600.949 ; gain = 393.715
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -284,10 +177,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 600.949 ; gain = 393.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -299,16 +192,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -325,7 +218,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -338,7 +231,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,25 +243,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -385,29 +278,33 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     5|
-|3     |LUT1   |    20|
-|4     |LUT2   |     4|
-|5     |FDRE   |    20|
-|6     |IBUF   |     1|
-|7     |OBUF   |    11|
-|8     |OBUFT  |     1|
+|2     |CARRY4 |    80|
+|3     |LUT1   |    37|
+|4     |LUT2   |   180|
+|5     |LUT3   |    57|
+|6     |LUT4   |    97|
+|7     |LUT5   |    68|
+|8     |LUT6   |    64|
+|9     |FDRE   |   170|
+|10    |IBUF   |    22|
+|11    |OBUF   |    27|
+|12    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    63|
+|1     |top      |       |   804|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 624.230 ; gain = 416.996
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 600.047 ; gain = 95.297
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 600.047 ; gain = 392.906
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 624.230 ; gain = 119.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 624.230 ; gain = 416.996
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -415,8 +312,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
+21 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 600.047 ; gain = 392.906
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 600.047 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 28 09:29:41 2018...
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 624.230 ; gain = 416.996
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 624.230 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 28 10:43:04 2018...
