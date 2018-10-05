@@ -1,7 +1,7 @@
 `ifndef HEXTOSEG_HEADER
 `define HEXTOSEG_HEADER
 
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 

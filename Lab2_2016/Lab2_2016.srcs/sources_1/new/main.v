@@ -22,7 +22,7 @@
 
 module main(
     output reg [6:0] seg,
-    output dp,
+//    output dp,
     output reg [3:0] an,
     output reg [15:0] LED,
     input btnU,
