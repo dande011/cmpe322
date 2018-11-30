@@ -55,12 +55,15 @@ ODDR #(
        end       
    end
 
-wire signed [`CHANNELDEPTH -1:0] sawtooth;
+reg signed [(`CHANNELDEPTH -1):0] sawtooth;
+reg [1:0] waveformEnable = 2'b00;
 
 oscillator Osc1[15:0](
     .enable(sw),
     .lrclk(lrclk_2518),
-    .sawtooth(sawtooth)
+//    .waveformEnable(waveformEnable),
+//    .waveform(waveform), //saw, sine, tri, sqr
+    .sawtooth(sawtooth) //00
 );
 
 i2s_tx i2stx(

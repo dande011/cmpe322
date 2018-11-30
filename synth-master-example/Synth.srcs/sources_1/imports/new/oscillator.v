@@ -25,9 +25,11 @@
 module oscillator(
     input [15:0] enable,
     input lrclk,
+//    input waveformEnable,
     output reg signed [`CHANNELDEPTH-1:0] sawtooth = 0
     );
     
+//    reg signed [23:0] sawtooth_internal [15:0];
     reg signed [23:0] sawtooth_internal [15:0];
     reg [23:0] rate [15:0];     
       
@@ -61,9 +63,10 @@ always@(posedge(lrclk)) begin
         initialstate = 0;
     end
     else begin
-        sawtooth = 0;
         for(i = 0; i<16; i=i+1) begin
-            sawtooth_internal[i] = enable[i] ? sawtooth_internal[i] + rate[i] : 0;
+//            sawtooth_internal[i] = enable[i] ? sawtooth_internal[i] + rate[i] : 0;
+            sawtooth_internal[i] = enable[i] ? sawtooth_internal[i] + 153791 : 0;
+//            sawtooth = sawtooth + (sawtooth_internal[23:8]>>6);
             sawtooth = sawtooth + (sawtooth_internal[i][23:8]>>6);
             if(enable[i])begin
                 $display(sawtooth_internal[i]);
