@@ -21,6 +21,7 @@
  *
  * Modified by JUIXXXE Sept. 2015
  * Modified by JUIXXXE Jan. 2016
+ * Modified by D Anderson Nov 2018
  */
  `timescale 1ns / 1ps
 `define CHANNELDEPTH 16

@@ -1,6 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: JUIXXXE
+// Company: 
+// Engineer: 
+// 
+// Create Date: 12/07/2018 10:17:37 AM
+// Design Name: 
+// Module Name: test
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
 //////////////////////////////////////////////////////////////////////////////////
 `define CHANNELDEPTH 16
 
@@ -26,7 +42,7 @@ module oscillator(
     input [15:0] enable,
     input lrclk,
 //    input waveformEnable,
-    output reg signed [`CHANNELDEPTH-1:0] sawtooth = 0
+    output reg signed [`CHANNELDEPTH-1:0] sawtooth
     );
     
 //    reg signed [23:0] sawtooth_internal [15:0];
