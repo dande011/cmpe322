@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date              : Fri Dec 07 11:54:22 2018
+| Date              : Sat Dec 08 18:15:57 2018
 | Host              : Jonie4-XPS running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file synth_top_clock_utilization_routed.rpt
 | Design            : synth_top
@@ -48,8 +48,8 @@ Table of Contents
 +-------+---------------------------+----------------------+------+-------+-------+
 | Index | BUFG Cell                 | Net Name             | BELs | Sites | Fixed |
 +-------+---------------------------+----------------------+------+-------+-------+
-|     1 | mclk_BUFG_inst            | mclk_BUFG            |   56 |    15 |    no |
-|     2 | lrclk_2518_OBUF_BUFG_inst | lrclk_2518_OBUF_BUFG |  380 |   103 |    no |
+|     1 | mclk_BUFG_inst            | mclk_BUFG            |   56 |    16 |    no |
+|     2 | lrclk_2518_OBUF_BUFG_inst | lrclk_2518_OBUF_BUFG |  380 |    98 |    no |
 +-------+---------------------------+----------------------+------+-------+-------+
 
 
@@ -85,9 +85,9 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  422 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  372 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    1 |    50 |   12 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    1 |    50 |   62 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites.
@@ -99,19 +99,19 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |    Clock Net Name    |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------+
-| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  43 |     0 |        0 | mclk_BUFG            |
-| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 379 |     0 |        0 | lrclk_2518_OBUF_BUFG |
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 372 |     0 |        0 | lrclk_2518_OBUF_BUFG |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------+
 
 
 9. Net wise resources used in clock region X0Y2
 -----------------------------------------------
 
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-| BUFG        | BUFHCE_X0Y35 |   no  |         0 |        0 |       0 |         0 |       0 |       1 |  12 |     0 |        0 | mclk_BUFG      |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |    Clock Net Name    |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------+
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   7 |     0 |        0 | lrclk_2518_OBUF_BUFG |
+| BUFG        | BUFHCE_X0Y35 |   no  |         0 |        0 |       0 |         0 |       0 |       1 |  55 |     0 |        0 | mclk_BUFG            |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------+
 
 
 
@@ -133,7 +133,7 @@ set_property LOC MMCME2_ADV_X1Y0 [get_cells clkdiv_i/MMCME2_BASE_inst]
 # Location of PLL Clock Primitives
 
 # Location of IO Primitives which is load of clock spine
-set_property LOC IOB_X0Y125 [get_cells lrclk_2518_OBUF_inst]
+set_property LOC IOB_X0Y126 [get_cells lrclk_2518_OBUF_inst]
 
 # Location of clock ports
 set_property LOC IOB_X1Y26 [get_ports clk]
@@ -142,12 +142,12 @@ set_property LOC IOB_X1Y26 [get_ports clk]
 #startgroup
 create_pblock {CLKAG_lrclk_2518_OBUF_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_lrclk_2518_OBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=lrclk_2518_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="lrclk_2518_OBUF_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_lrclk_2518_OBUF_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_lrclk_2518_OBUF_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
 #endgroup
 
 # Clock net "mclk_BUFG" driven by instance "mclk_BUFG_inst" located at site "BUFGCTRL_X0Y1"
 #startgroup
 create_pblock {CLKAG_mclk_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_mclk_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="mclk_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_mclk_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+resize_pblock [get_pblocks {CLKAG_mclk_BUFG}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
 #endgroup

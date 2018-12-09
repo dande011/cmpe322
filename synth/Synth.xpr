@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="C:/Users/david/Downloads/synth-master/Synth.xpr">
+<Project Version="7" Minor="5" Path="C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5e189d7a9033442db0843a64c2a0a1ba"/>

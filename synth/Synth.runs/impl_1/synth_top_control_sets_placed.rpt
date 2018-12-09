@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Fri Dec 07 11:53:51 2018
+| Date         : Sat Dec 08 18:15:35 2018
 | Host         : Jonie4-XPS running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file synth_top_control_sets_placed.rpt
 | Design       : synth_top
@@ -35,10 +35,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              10 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             364 |           97 |
+| No           | Yes                   | No                     |             364 |           92 |
 | Yes          | No                    | No                     |              56 |           14 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               4 |            1 |
+| Yes          | Yes                   | No                     |               4 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -49,12 +49,12 @@ Table of Contents
 |      Clock Signal     |        Enable Signal        |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
 +-----------------------+-----------------------------+--------------------------+------------------+----------------+
 |  lrclk_2518_OBUF_BUFG |                             |                          |                1 |              1 |
-|  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0 | i2stx/bit_cnt[3]_i_1_n_0 |                1 |              4 |
+|  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0 | i2stx/bit_cnt[3]_i_1_n_0 |                2 |              4 |
 |  mclk_BUFG            |                             |                          |                3 |              9 |
 |  mclk_BUFG            | sel                         |                          |                3 |             12 |
 |  lrclk_2518_OBUF_BUFG | Osc1[15]/p_0_in             |                          |                4 |             14 |
 |  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0 |                          |                7 |             30 |
-|  lrclk_2518_OBUF_BUFG |                             | Osc1[15]/initialstate    |               97 |            364 |
+|  lrclk_2518_OBUF_BUFG |                             | Osc1[15]/initialstate    |               92 |            364 |
 +-----------------------+-----------------------------+--------------------------+------------------+----------------+
 
 

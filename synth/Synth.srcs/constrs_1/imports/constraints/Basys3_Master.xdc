@@ -174,29 +174,29 @@ set_property PACKAGE_PIN U17 [get_ports btnD]
     
 ##Pmod Header JB
     ##Sch name = JB1
-    set_property PACKAGE_PIN A14 [get_ports {sd_2518}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {sd_2518}]
-    ##Sch name = JB2
-    set_property PACKAGE_PIN A16 [get_ports {bclk_2518}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {bclk_2518}]
-#    ##Sch name = JB3
-#    #set_property PACKAGE_PIN B15 [get_ports {JB[2]}]
-#    #set_property IOSTANDARD LVCMOS33 [get_ports {JB[2]}]
-#    #Sch name = JB4
-#    set_property PACKAGE_PIN B16 [get_ports {sdata_2518}]
-#    set_property IOSTANDARD LVCMOS33 [get_ports {sdata_2518}]
-    #Sch name = JB7
-    set_property PACKAGE_PIN A15 [get_ports {mclk_2518}]
+    set_property PACKAGE_PIN A14 [get_ports {mclk_2518}]
     set_property IOSTANDARD LVCMOS33 [get_ports {mclk_2518}]
-    #Sch name = JB8
-    set_property PACKAGE_PIN A17 [get_ports {lrclk_2518}]
+    ##Sch name = JB2
+    set_property PACKAGE_PIN A16 [get_ports {lrclk_2518}]
     set_property IOSTANDARD LVCMOS33 [get_ports {lrclk_2518}]
-    #Sch name = JB9
-#    set_property PACKAGE_PIN C15 [get_ports {mclk_2518}]
-#    set_property IOSTANDARD LVCMOS33 [get_ports {mclk_2518}]
-    #Sch name = JB10
-    set_property PACKAGE_PIN C16 [get_ports {sdata_2518}]
+    ##Sch name = JB3
+    #set_property PACKAGE_PIN B15 [get_ports {JB[2]}]
+    #set_property IOSTANDARD LVCMOS33 [get_ports {JB[2]}]
+    #Sch name = JB4
+    set_property PACKAGE_PIN B16 [get_ports {sdata_2518}]
     set_property IOSTANDARD LVCMOS33 [get_ports {sdata_2518}]
+    #Sch name = JB7
+    set_property PACKAGE_PIN A15 [get_ports {bclk_2518}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {bclk_2518}]
+    #Sch name = JB8
+    set_property PACKAGE_PIN A17 [get_ports {sd_2518}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {sd_2518}]
+#    #Sch name = JB9
+##    set_property PACKAGE_PIN C15 [get_ports {mclk_2518}]
+##    set_property IOSTANDARD LVCMOS33 [get_ports {mclk_2518}]
+#    #Sch name = JB10
+#    set_property PACKAGE_PIN C16 [get_ports {sdata_2518}]
+#    set_property IOSTANDARD LVCMOS33 [get_ports {sdata_2518}]
 
 
 ##Pmod Header JC
