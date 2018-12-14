@@ -54,7 +54,7 @@ always @(posedge mclk) begin
        //assign proper chanel to sdata
         sdata = lrclk_delayed ? right[`CHANNELDEPTH-1 - bit_cnt] : left[`CHANNELDEPTH-1 - bit_cnt];
         //increment bit count
-        if(bit_cnt == `logCHANNELDEPTH'b01111)
+        if(bit_cnt == `logCHANNELDEPTH'b1111)
             bit_cnt = `logCHANNELDEPTH'b0;
         else
             bit_cnt = bit_cnt + 1;
