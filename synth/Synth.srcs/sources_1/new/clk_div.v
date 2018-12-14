@@ -21,7 +21,6 @@
 module clk_div(
     input clk,
     output wire mclk,
-    output wire bclk,
     output wire lrclk
     );
 wire clkfb;
@@ -68,8 +67,7 @@ MMCME2_BASE_inst (
       .PWRDWN(1'b0),       // 1-bit input: Power-down
       .RST(1'b0)             // 1-bit input: Reset
    );
-                    
-   assign bclk  = mclk_count[2];  // mclk / 8
+ 
    assign lrclk = mclk_count[7]; // mclk / 256
                     
 always@(posedge(mclk)) begin

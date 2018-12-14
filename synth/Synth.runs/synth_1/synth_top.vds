@@ -2,8 +2,8 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Sat Dec 08 18:14:43 2018
-# Process ID: 8684
+# Start of session at: Fri Dec 14 02:08:49 2018
+# Process ID: 10180
 # Log file: C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.runs/synth_1/synth_top.vds
 # Journal file: C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
@@ -13,7 +13,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 246.926 ; gain = 71.512
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 246.492 ; gain = 70.543
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'synth_top' [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/synth_top.v:23]
 INFO: [Synth 8-638] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:20635]
@@ -26,7 +26,7 @@ INFO: [Synth 8-638] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2015.2/scripts/
 INFO: [Synth 8-256] done synthesizing module 'ODDR' (1#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:20635]
 INFO: [Synth 8-638] synthesizing module 'oscillator' [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/imports/new/oscillator.v:41]
 INFO: [Synth 8-256] done synthesizing module 'oscillator' (2#1) [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/imports/new/oscillator.v:41]
-WARNING: [Synth 8-445] multiply driven output port connection 'sawtooth' in instance array 'Osc1' [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/synth_top.v:76]
+WARNING: [Synth 8-445] multiply driven output port connection 'sawtooth' in instance array 'Osc1' [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/synth_top.v:67]
 INFO: [Synth 8-638] synthesizing module 'i2s_tx' [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/imports/new/i2s_tx.v:29]
 INFO: [Synth 8-256] done synthesizing module 'i2s_tx' (3#1) [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/imports/new/i2s_tx.v:29]
 INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/clk_div.v:21]
@@ -61,7 +61,7 @@ INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2015.2/s
 	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (4#1) [C:/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:16119]
-WARNING: [Synth 8-350] instance 'MMCME2_BASE_inst' of module 'MMCME2_BASE' requires 18 connections, but only 6 given [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/clk_div.v:63]
+WARNING: [Synth 8-350] instance 'MMCME2_BASE_inst' of module 'MMCME2_BASE' requires 18 connections, but only 6 given [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/clk_div.v:62]
 INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/clk_div.v:21]
 INFO: [Synth 8-256] done synthesizing module 'synth_top' (6#1) [C:/Users/david/Documents/GitHub/cmpe322/synth/Synth.srcs/sources_1/new/synth_top.v:23]
 WARNING: [Synth 8-3917] design synth_top has port dp driven by constant 0
@@ -72,7 +72,7 @@ WARNING: [Synth 8-3917] design synth_top has port an[2] driven by constant 0
 WARNING: [Synth 8-3917] design synth_top has port an[1] driven by constant 0
 WARNING: [Synth 8-3917] design synth_top has port an[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 280.262 ; gain = 104.848
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 280.883 ; gain = 104.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -82,7 +82,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 280.262 ; gain = 104.848
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 280.883 ; gain = 104.934
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -100,25 +100,27 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MMCME2_BASE => MMCME2_ADV: 1 instances
 
 INFO: [Timing 38-2] Deriving generated clocks
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 601.504 ; gain = 0.672
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 601.387 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "lrclk_delayed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "left" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance '\Osc1[15] ' (oscillator) to '\Osc1[14] '
 INFO: [Synth 8-223] decloning instance '\Osc1[15] ' (oscillator) to '\Osc1[13] '
@@ -148,16 +150,19 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     24 Bit       Adders := 16    
 	  16 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               24 Bit    Registers := 32    
 	               16 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -168,15 +173,18 @@ Hierarchical RTL Component report
 Module i2s_tx 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
 Module oscillator 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -198,7 +206,7 @@ BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 601.504 ; gain = 426.090
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -210,9 +218,9 @@ WARNING: [Synth 8-3917] design synth_top has port an[2] driven by constant 0
 WARNING: [Synth 8-3917] design synth_top has port an[1] driven by constant 0
 WARNING: [Synth 8-3917] design synth_top has port an[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 601.387 ; gain = 425.438
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -326,16 +334,16 @@ INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instan
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 601.387 ; gain = 425.438
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -343,10 +351,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -358,7 +366,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -376,7 +384,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -389,7 +397,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -401,13 +409,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Start Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -424,40 +432,40 @@ Report Cell Usage:
 |      |Cell        |Count |
 +------+------------+------+
 |1     |BUFG        |     2|
-|2     |CARRY4      |   120|
-|3     |LUT1        |   371|
+|2     |CARRY4      |   117|
+|3     |LUT1        |   359|
 |4     |LUT2        |   369|
-|5     |LUT3        |    40|
+|5     |LUT3        |    41|
 |6     |LUT4        |    20|
-|7     |LUT5        |    31|
-|8     |LUT6        |   122|
+|7     |LUT5        |    35|
+|8     |LUT6        |   121|
 |9     |MMCME2_BASE |     1|
 |10    |MUXF7       |     4|
 |11    |MUXF8       |     2|
 |12    |ODDR        |     1|
-|13    |FDRE        |   434|
+|13    |FDRE        |   426|
 |14    |IBUF        |    22|
-|15    |OBUF        |    33|
+|15    |OBUF        |    31|
 +------+------------+------+
 
 Report Instance Areas: 
 +------+-------------+-----------+------+
 |      |Instance     |Module     |Cells |
 +------+-------------+-----------+------+
-|1     |top          |           |  1572|
+|1     |top          |           |  1551|
 |2     |  \Osc1[15]  |oscillator |  1298|
 |3     |  clkdiv_i   |clk_div    |    19|
-|4     |  i2stx      |i2s_tx     |    94|
+|4     |  i2stx      |i2s_tx     |   103|
 +------+-------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 421 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 601.504 ; gain = 87.176
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 601.504 ; gain = 426.090
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 601.387 ; gain = 87.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.387 ; gain = 425.438
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'synth_top' is not ideal for floorplanning, since the cellview 'oscillator' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -466,8 +474,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MMCME2_BASE => MMCME2_ADV: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-44 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+46 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 601.504 ; gain = 408.680
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 601.504 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 08 18:15:11 2018...
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 601.387 ; gain = 409.137
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 601.387 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 14 02:09:23 2018...

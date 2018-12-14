@@ -28,8 +28,6 @@
 `define logCHANNELDEPTH 4
 module i2s_tx(
     input            mclk,
-    input            bclk,
-    input            lrclk,
     output reg        sdata = 1'b0,
     input signed [`CHANNELDEPTH-1:0]    left_chan, 
     input signed [`CHANNELDEPTH-1:0]    right_chan
@@ -38,11 +36,12 @@ reg lrclk_delayed = 1'b1;
 reg [`logCHANNELDEPTH-1:0] bit_cnt = `logCHANNELDEPTH'b0;
 reg signed [`CHANNELDEPTH-1:0]        left;
 reg signed [`CHANNELDEPTH-1:0]        right;
-reg bclk_last = 1'b0;
+reg [4:0] mclk_count = 4'b0;
     
 always @(posedge mclk) begin
     //i2s requires the signal be delayed by one bclk cycle from the lr switch
-    if(bclk_last == 1'b1 && bclk == 1'b0) begin
+    if(mclk_count == 8) begin
+        mclk_count = 0;
         if (bit_cnt == `logCHANNELDEPTH'b0) begin
             lrclk_delayed = ~lrclk_delayed;
             //read in channels at beginning of lr cycle
@@ -60,6 +59,6 @@ always @(posedge mclk) begin
         else
             bit_cnt = bit_cnt + 1;
     end
-    bclk_last = bclk;
+    mclk_count = mclk_count + 1;
 end
 endmodule

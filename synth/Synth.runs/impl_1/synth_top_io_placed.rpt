@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Sat Dec 08 18:15:35 2018
+| Date         : Fri Dec 14 02:09:56 2018
 | Host         : Jonie4-XPS running 64-bit major release  (build 9200)
 | Command      : report_io -file synth_top_io_placed.rpt
 | Design       : synth_top
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            55 |
+|            53 |
 +---------------+
 
 
@@ -47,9 +47,9 @@ Table of Contents
 | A12        |             | Dedicated  | VP_0                         | XADC          |             |       0 |            |      |                     |                      |         |            |           |      |                  |
 | A13        |             | Dedicated  | VREFN_0                      | XADC          |             |       0 |            |      |                     |                      |         |            |           |      |                  |
 | A14        | mclk_2518   | High Range | IO_L6P_T0_16                 | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| A15        | bclk_2518   | High Range | IO_L6N_T0_VREF_16            | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| A15        |             | High Range | IO_L6N_T0_VREF_16            | User IO       |             |      16 |            |      |                     |                      |         |            |           |      |                  |
 | A16        | lrclk_2518  | High Range | IO_L12P_T1_MRCC_16           | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| A17        | sd_2518     | High Range | IO_L12N_T1_MRCC_16           | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| A17        |             | High Range | IO_L12N_T1_MRCC_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |      |                  |
 | A18        |             | High Range | IO_L19N_T3_VREF_16           | User IO       |             |      16 |            |      |                     |                      |         |            |           |      |                  |
 | A19        |             |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | B1         |             |            | MGTAVTT                      | Gigabit Power |             |         |            |      |                     |                      |         |            |           |      |                  |

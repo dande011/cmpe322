@@ -34,8 +34,8 @@ module synth_top(
      output [6:0] seg,
      output reg [3:0] an = 4'b0,
      
-     output wire sd_2518,   // Shut down - active low
-     output wire bclk_2518,       // bit clock output for 2518 
+//     output wire sd_2518,   // Shut down - active low
+//     output wire bclk_2518,       // bit clock output for 2518 
      output wire lrclk_2518,      // lrclk aka word clock for 2518
      output wire sdata_2518,      // serial data output for 2518    
      output wire mclk_2518        // master clock for 2518
@@ -61,15 +61,6 @@ ODDR #(
       .R(1'b0),   // 1-bit reset
       .S(1'b0)    // 1-bit set
    );
-   
-   // Power down the device on startup.
-   reg [11:0] power_down_counter = 12'b0;
-   assign sd_2518 = power_down_counter[11];
-   always@( posedge(mclk) ) begin
-       if (power_down_counter[11] == 0) begin
-           power_down_counter = power_down_counter + 1;
-       end       
-   end
 
 wire signed [`CHANNELDEPTH -1:0] sawtooth;
 
@@ -80,8 +71,6 @@ oscillator Osc1[15:0](
 );
 
 i2s_tx i2stx(
-    .bclk(bclk_2518),
-    .lrclk(lrclk_2518),
     .mclk(mclk),
     .sdata(sdata_2518),
     .left_chan(sawtooth),
@@ -90,7 +79,6 @@ i2s_tx i2stx(
 clk_div clkdiv_i(
     .clk(clk),
     .mclk(mclk),
-    .bclk(bclk_2518),
     .lrclk(lrclk_2518)
 );
 endmodule
