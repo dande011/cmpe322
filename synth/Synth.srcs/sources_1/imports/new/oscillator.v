@@ -53,22 +53,22 @@ reg [4:0] i =0;
 always@(posedge(lrclk)) begin
     if(initialstate)begin
     
-        rate[0] = `A3;
-        rate[1] = `B3;
-        rate[2] = `C4;
-        rate[3] = `D4;
-        rate[4] = `E4;
-        rate[5] = `F4;
-        rate[6] = `G4;
-        rate[7] = `A4;
-        rate[8] = `B4;
-        rate[9] = `C5;
-        rate[10] = `D5;
-        rate[11] = `E5;
-        rate[12] = `F5;
-        rate[13] = `G5;
-        rate[14] = `A5;
-        rate[15] = `B5;
+        rate[0] = `B5;
+        rate[1] = `A5;
+        rate[2] = `G5;
+        rate[3] = `F5;
+        rate[4] = `E5;
+        rate[5] = `D5;
+        rate[6] = `C5;
+        rate[7] = `B4;
+        rate[8] = `A4;
+        rate[9] = `G4;
+        rate[10] = `F4;
+        rate[11] = `E4;
+        rate[12] = `D4;
+        rate[13] = `C4;
+        rate[14] = `B3;
+        rate[15] = `A3;
 
         for(i = 0; i<16; i=i+1) begin
             sawtooth_internal[i] = 0;

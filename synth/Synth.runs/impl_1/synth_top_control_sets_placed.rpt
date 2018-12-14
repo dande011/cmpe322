@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Fri Dec 14 02:09:56 2018
+| Date         : Fri Dec 14 03:59:55 2018
 | Host         : Jonie4-XPS running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file synth_top_control_sets_placed.rpt
 | Design       : synth_top
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              14 |            5 |
+| No           | No                    | No                     |              14 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             364 |           94 |
-| Yes          | No                    | No                     |              44 |           10 |
+| No           | Yes                   | No                     |             364 |           93 |
+| Yes          | No                    | No                     |              44 |           11 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               4 |            1 |
+| Yes          | Yes                   | No                     |               4 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -49,11 +49,11 @@ Table of Contents
 |      Clock Signal     |         Enable Signal         |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
 +-----------------------+-------------------------------+--------------------------+------------------+----------------+
 |  lrclk_2518_OBUF_BUFG |                               |                          |                1 |              1 |
-|  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0   | i2stx/bit_cnt[3]_i_1_n_0 |                1 |              4 |
-|  mclk_BUFG            |                               |                          |                4 |             13 |
+|  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0   | i2stx/bit_cnt[3]_i_1_n_0 |                2 |              4 |
+|  mclk_BUFG            |                               |                          |                3 |             13 |
 |  lrclk_2518_OBUF_BUFG | Osc1[15]/sawtooth[13]_i_1_n_0 |                          |                4 |             14 |
-|  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0   |                          |                6 |             30 |
-|  lrclk_2518_OBUF_BUFG |                               | Osc1[15]/initialstate    |               94 |            364 |
+|  mclk_BUFG            | i2stx/lrclk_delayed_i_1_n_0   |                          |                7 |             30 |
+|  lrclk_2518_OBUF_BUFG |                               | Osc1[15]/initialstate    |               93 |            364 |
 +-----------------------+-------------------------------+--------------------------+------------------+----------------+
 
 
